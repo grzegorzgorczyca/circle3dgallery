@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Gallery</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-Script-Type" content="text/javascript" />
+        <meta http-equiv="Author" content="Grzegorz Gorczyca"/>
+        <meta name="Keywords" content=""/>
+        <meta name="Description" content=""/>
+
+        <script type="text/javascript" src="../src/circle3dgallery.js"></script>
+
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    </head>
+    <body>
+        <div id="gal"></div>
+
+        <div id="images">
+            <img src="1-m.jpg" alt=""  />
+            <img src="2-m.jpg" alt=""  />
+            <img src="6-m.jpg" alt=""  />
+            <img src="7-m.jpg" alt=""  />
+            <img src="8-m.jpg" alt=""  />
+            <img src="9-m.jpg" alt=""  />
+            <img src="10-m.jpg" alt=""  />
+            <img src="12-m.jpg" alt=""  />
+            <img src="14-m.jpg" alt=""  />
+            <img src="16-m.jpg" alt=""  />
+            <img src="18-m.jpg" alt=""  />
+            <img src="19-m.jpg" alt=""  />
+            <img src="20-m.jpg" alt=""  />
+            <img src="22-m.jpg" alt=""  />
+        </div>
+        <script>
+            circle3DGallery.init({
+                gallerySelector: '#gal',
+                imagesContainerSelector: '#images',
+                interval: 16
+            });
+        </script>
+    </body>
+</html>
